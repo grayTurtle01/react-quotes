@@ -1,4 +1,5 @@
-import QuoteCard from './components/QuoteCard'
+import QuoteCard from './components/QuoteCard';
+
 
 function App(props) {
   

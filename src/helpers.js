@@ -31,7 +31,7 @@ let quotes = [
     },
     {
         quote: "Se el cambio que quires ver en el mundo",
-        author: 'Gandhi?'
+        author: 'Gandhi*'
     },
     {
         quote: "Break Things and move Fast",
@@ -39,7 +39,7 @@ let quotes = [
     },
     {
         quote: "El fin justifica los medios",
-        author: 'Maquiavelo?'
+        author: 'Maquiavelo*'
     },
     {
         quote: "Good artists copy, great artists steal",
@@ -62,4 +62,4 @@ function get_random_color(){
     return color
 }
 
-export {quotes, get_random_quote, get_random_color}
+export {get_random_quote, get_random_color}

@@ -1,81 +1,55 @@
-import React from 'react'
+import { useState } from "react"
+import { get_random_quote, get_random_color } from "../helpers"
 
 import './QuoteCard.css'
 
-import {quotes, get_random_quote, get_random_color} from '../helpers.js'
 
-class QuoteCard extends React.Component{
+function QuoteCard(){
 
-    constructor(props){
-      super(props)
+    const [quote, setQuote] = useState(get_random_quote())
+    const [color, setColor] = useState(get_random_color())
 
-      this.state = {
-         quote : "",
-         author: "",
-         color: '' 
-      }
-    }
-    
-    set_random_state(){
+    const handleClick = ()=>{
+        setQuote( get_random_quote() )
+        setColor( get_random_color() )
 
-      let random_quote = get_random_quote()
-      let color = get_random_color()
-      
-      while( random_quote.quote == this.state.quote){
-        random_quote = get_random_quote()
-      }
-
-      document.querySelector('body').style.background = color
-      document.querySelector('#tweet-quote').style.background = color
-      document.querySelector('#tumblr-quote').style.background = color
-      //document.querySelector('#new-quote').style.background = color
-
-      this.setState({
-        quote: random_quote.quote,
-        author: random_quote.author,
-        color: color
-      })
-
-     
     }
 
-    componentDidMount(){
-      this.set_random_state()
-    }
+    document.querySelector('body').style.background = color
 
-    handleClick = () => {
-      this.set_random_state()
-    }
-
-    
-    render(){
-      return(
+    return(
         <div id="quote-box" className="card p-3">
 
             <p id="text" className="h3 mb-2">
-              <i className="fa fa-quote-left"></i>
-              <span className="m-3">{this.state.quote}</span>
+            <i className="fa fa-quote-left"></i>
+            <span className="m-3">{quote.quote}</span>
             </p>
 
-            <span id="author" className="text-end mb-2 h6">-{this.state.author}</span>
+            <span id="author" className="text-end mb-2 h6">-{quote.author}</span>
 
             <div className="d-flex justify-content-between">
-              <div>
-                <a href="http://twitter.com/intent/tweet" id="tweet-quote" target="_blank" className="btn btn-sm btn-info">
-                  <i className="fab fa-twitter" ></i>  
+
+            <div>
+                <a href="http://twitter.com/intent/tweet" target="_blank" 
+                   id="tweet-quote"  className="btn btn-sm btn-info"
+                   style={ {background: color } }
+                   >
+                    <i className="fab fa-twitter" ></i>  
                 </a>
-                <a href="http://" id="tumblr-quote" target="_blank" className="btn btn-sm btn-info ">
+
+                <a href="http://"  target="_blank"
+                   id="tumblr-quote"  className="btn btn-sm btn-info "
+                   style={ {background: color } }    
+                   >
                     <i className="fab fa-tumblr" ></i>  
                 </a>
+
+
             </div>
-              <button id="new-quote" onClick={this.handleClick} className="btn btn-sm btn-primary">New Quote</button>
+            <button id="new-quote" onClick={handleClick} className="btn btn-sm btn-primary">New Quote</button>
             </div>
-        </div>
-        )
-    }
+    </div>
+    )
 }
 
 export default QuoteCard
-
-
-
