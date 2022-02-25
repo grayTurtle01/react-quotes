@@ -30,7 +30,7 @@ let quotes = [
       author: 'Nietzsche'
     },
     {
-        text: "Se el cambio que quires ver en el mundo",
+        text: "Se el cambio que quieres ver en el mundo",
         author: 'Gandhi*'
     },
     {
