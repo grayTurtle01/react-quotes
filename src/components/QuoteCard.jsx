@@ -2,6 +2,7 @@ import { useState } from "react"
 import { get_random_quote, get_random_color } from "../helpers"
 
 import './QuoteCard.css'
+import SocialButton from "./SocialButton"
 
 
 function QuoteCard(){
@@ -27,26 +28,29 @@ function QuoteCard(){
 
             <span id="author" className="text-end mb-2 h6">-{quote.author}</span>
 
-            <div className="d-flex justify-content-between">
+            <div className="d-flex justify-content-between mt-3">
 
-            <div>
-                <a href="http://twitter.com/intent/tweet" target="_blank" 
-                   id="tweet-quote"  className="btn btn-sm btn-info"
-                   style={ {background: color } }
-                   >
-                    <i className="fab fa-twitter" ></i>  
-                </a>
+                <div>
 
-                <a href="http://"  target="_blank"
-                   id="tumblr-quote"  className="btn btn-sm btn-info "
-                   style={ {background: color } }    
-                   >
-                    <i className="fab fa-tumblr" ></i>  
-                </a>
+                    <SocialButton url="http://twitter.com/intent/tweet" 
+                                id="twett-quote" 
+                                color={color} 
+                                icon="fab fa-twitter" />
 
 
-            </div>
-            <button id="new-quote" onClick={handleClick} className="btn btn-sm btn-primary">New Quote</button>
+                    <SocialButton url="http://" 
+                                id="tumblr-quote" 
+                                color={color} 
+                                icon="fab fa-tumblr" />
+
+                </div>
+
+                <button id="new-quote" 
+                        onClick={handleClick} 
+                        className="btn btn-sm btn-primary">
+                    New Quote
+                </button>
+
             </div>
     </div>
     )
