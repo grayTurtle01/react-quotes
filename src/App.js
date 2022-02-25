@@ -1,10 +1,11 @@
+import QuoteCard from './components/QuoteCard'
 
 function App(props) {
   
   // return
   return (
    <div>
-      <p>Hello React</p>
+      <QuoteCard />
    </div> 
   )
 }
