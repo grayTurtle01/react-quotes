@@ -1,48 +1,48 @@
 let quotes = [ 
-    { quote: 'Cogito Ergo Sum',
+    { text: 'Cogito Ergo Sum',
        author: 'Descartes'},
 
-    { quote: 'El hombre es el lobo del hombre',
+    { text: 'El hombre es el lobo del hombre',
       author: 'Hobbes'
       },
     {
-      quote: 'Think Different',
+      text: 'Think Different',
       author: 'Steve Jobs'
     },
     {
-      quote: "Don't be Evil ",
+      text: "Don't be Evil ",
       author: 'Google'
     },
     {
-      quote: "Connecting People",
+      text: "Connecting People",
       author: 'Facebook'
     },
     {
-      quote: "Yo no soy un hombre, soy dinamita",
+      text: "Yo no soy un hombre, soy dinamita",
       author: 'Nietzsche'
     },
     {
-      quote: "Un hombre es lo que hace, con lo que hicieron de el",
+      text: "Un hombre es lo que hace, con lo que hicieron de el",
       author: 'Sartre'
     },
     {
-      quote: "No hay hechos solo interpretaciones",
+      text: "No hay hechos solo interpretaciones",
       author: 'Nietzsche'
     },
     {
-        quote: "Se el cambio que quires ver en el mundo",
+        text: "Se el cambio que quires ver en el mundo",
         author: 'Gandhi*'
     },
     {
-        quote: "Break Things and move Fast",
+        text: "Break Things and move Fast",
         author: 'Facebook'
     },
     {
-        quote: "El fin justifica los medios",
+        text: "El fin justifica los medios",
         author: 'Maquiavelo*'
     },
     {
-        quote: "Good artists copy, great artists steal",
+        text: "Good artists copy, great artists steal",
         author: 'Picaso'
     },
 ]

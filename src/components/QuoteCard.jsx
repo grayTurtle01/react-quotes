@@ -19,11 +19,12 @@ function QuoteCard(){
     document.querySelector('body').style.background = color
 
     return(
+        
         <div id="quote-box" className="card p-3">
 
             <p id="text" className="h3 mb-2">
-            <i className="fa fa-quote-left"></i>
-            <span className="m-3">{quote.quote}</span>
+                <i className="fa fa-quote-left"></i>
+                <span className="m-3">{quote.text}</span>
             </p>
 
             <span id="author" className="text-end mb-2 h6">-{quote.author}</span>
@@ -33,15 +34,15 @@ function QuoteCard(){
                 <div>
 
                     <SocialButton url="http://twitter.com/intent/tweet" 
-                                id="twett-quote" 
-                                color={color} 
-                                icon="fab fa-twitter" />
+                                  id="twett-quote" 
+                                  color={color} 
+                                  icon="fab fa-twitter" />
 
 
                     <SocialButton url="http://" 
-                                id="tumblr-quote" 
-                                color={color} 
-                                icon="fab fa-tumblr" />
+                                  id="tumblr-quote" 
+                                  color={color} 
+                                  icon="fab fa-tumblr" />
 
                 </div>
 
