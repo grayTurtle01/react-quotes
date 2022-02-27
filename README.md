@@ -6,7 +6,7 @@ Get a famous random quote
 
 ## Demo 🖥️
 
-[Live Demo]()
+[Live Demo](https://grayturtle01.github.io/react-quotes/) 🚀
 
 
 
