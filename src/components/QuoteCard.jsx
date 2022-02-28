@@ -39,13 +39,17 @@ function QuoteCard(){
                                   url={twitter_url}
                                   id="twett-quote" 
                                   color={color} 
-                                  icon="fab fa-twitter" />
+                                  icon="fab fa-twitter"
+                                  title="tweet this quote" 
+                                  />
 
 
                     <SocialButton url={tumblr_url} 
                                   id="tumblr-quote" 
                                   color={color} 
-                                  icon="fab fa-tumblr" />
+                                  icon="fab fa-tumblr" 
+                                  title="post this quote on tumblr!"
+                                  />
 
                 </div>
 
