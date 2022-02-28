@@ -2,7 +2,7 @@
 Get a random quotes
 
 ## ScreenShot 📸
-![Screnshot](images/screenshot.png) 
+![Screnshot](https://res.cloudinary.com/dqxtoises/image/upload/v1645980484/screenshot_lo6e8x.png) 
 
 ## Demo 🖥️
 
