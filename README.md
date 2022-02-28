@@ -6,6 +6,7 @@ Get a random quotes
 
 ## Demo 🖥️
 
-[Live Demo](https://grayturlte01.github.io/react-quotes)
+[Live Demo](https://grayturtle01.github.io/react-quotes)
+
 
 
