@@ -1,8 +1,8 @@
 ## Description 📖
 Get a random quotes
 
-## ScreenShoot 📸
-![Screnshoot](images/screenshoot.png) 
+## ScreenShot 📸
+![Screnshot](images/screenshot.png) 
 
 ## Demo 🖥️
 
