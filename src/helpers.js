@@ -58,7 +58,8 @@ function get_random_quote(){
 }
 
 function get_random_color(){
-    let colors = ['lightgray', 'ligthblue', 'gray', 'salmon', 'peru', 'lightpink', 'lightcoral']
+    let colors = ['lightgray', 'ligthblue', 'gray', 'salmon', 'peru', 'lightpink', 'lightcoral',
+                   '#9b59b6']
 
     let index = Math.floor(Math.random()*colors.length)
     let color = colors[index] 

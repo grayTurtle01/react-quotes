@@ -20,6 +20,9 @@ function QuoteCard(){
 
     document.querySelector('body').style.background = color
 
+    const twitter_url = `http://twitter.com/intent/tweet?hashtags=quotes&text=${quote.text}. -${quote.author}`
+    const tumblr_url = `http://tublr.com/widgets/share/tool?posttype=quotes&tags=quotes&caption=${quote.author}&content=${quote.text}`
+
     return(
         
         <div id="quote-box" className="card p-3">
@@ -30,13 +33,16 @@ function QuoteCard(){
 
                 <div>
 
-                    <SocialButton url="http://twitter.com/intent/tweet" 
+
+
+                    <SocialButton 
+                                  url={twitter_url}
                                   id="twett-quote" 
                                   color={color} 
                                   icon="fab fa-twitter" />
 
 
-                    <SocialButton url="http://" 
+                    <SocialButton url={tumblr_url} 
                                   id="tumblr-quote" 
                                   color={color} 
                                   icon="fab fa-tumblr" />
