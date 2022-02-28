@@ -1,8 +1,10 @@
 import { useState } from "react"
 import { get_random_quote, get_random_color } from "../helpers"
+import Quote from "./Quote"
 
 import './QuoteCard.css'
 import SocialButton from "./SocialButton"
+
 
 
 function QuoteCard(){
@@ -22,12 +24,7 @@ function QuoteCard(){
         
         <div id="quote-box" className="card p-3">
 
-            <p id="text" className="h3 mb-2">
-                <i className="fa fa-quote-left"></i>
-                <span className="m-3">{quote.text}</span>
-            </p>
-
-            <span id="author" className="text-end mb-2 h6">-{quote.author}</span>
+            <Quote text={quote.text} author={quote.author} />
 
             <div className="d-flex justify-content-between mt-3">
 

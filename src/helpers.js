@@ -45,6 +45,10 @@ let quotes = [
         text: "Good artists copy, great artists steal",
         author: 'Picaso'
     },
+    {
+      text: "Yo sólo se que no se nada",
+      author: 'Sócrates'
+  },
 ]
 
 function get_random_quote(){
